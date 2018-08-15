@@ -4,7 +4,6 @@
 *.egg*
 build/
 dist/
-config.py
 credentials.py
 *.so
 *.dat
