@@ -16,10 +16,9 @@ pip3 install -r requirements.txt
 The data can be found for multiple different dimensions in `gs://serrelab-public/data/`.
 
 ## run 32x32x24 version
-First, edit the load_env file with the configurations that work for you.
+First, edit the `run` file with the configurations that work for you.
 Each of the dimensions can be changed in the configuration file `configs/default3d.conf`
 (x, y, z) = (input_shape[0], input_shape[1], z_slices)
 ```bash
-. ./load_env
-python3.5 train.py
+./run
 ```

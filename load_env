@@ -1,5 +1,0 @@
-#!/bin/bash
-export TPU_NAME=node-9
-export MODEL_DIR=gs://serrelab/c2/model
-#export DATA_DIR=gs://cloud-tpu-test-datasets/fake_imagenet
-export DATA_DIR=gs://serrelab/c2/32_32_24
