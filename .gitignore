@@ -1,0 +1,13 @@
+*.pyc
+*.npz
+.DS_Store
+*.egg*
+build/
+dist/
+config.py
+credentials.py
+*.so
+*.dat
+*.lprof
+*.swp
+datasets/
