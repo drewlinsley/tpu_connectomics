@@ -1,0 +1,19 @@
+#!/bin/bash
+
+MODEL_DIR=gs://serrelab/c2/model_trash_4
+DATA_DIR=gs://serrelab-public/data/48_48_24
+TPU_NAME=connectomics-1
+#PROJECT=
+#ZONE=
+
+python3 ./train.py \
+	--use_tpu=True \
+	--tpu=$TPU_NAME \
+	--data_dir=$DATA_DIR \
+	--model_dir=$MODEL_DIR \
+	--iterations=100 \
+	--batch_size=1024 \
+	--train_steps=100 \
+	--eval_steps=200
+#	--gcp_project=$PROJECT \
+#	--tpu_zone=$ZONE \
